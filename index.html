@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500;1,600;1,700&family=Poppins:wght@200;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <script src="file.js" defer></script>
-    <script src="https://kit.fontawesome.com/0d6799dc23.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <h2 class="heading">My Weather Info</h2>
+        <div class="container">
             <form action="">
-                <input type="search" name="" id="input" placeholder="Search a city">
-                <button type="submit" id="goBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" autofocus placeholder="Search for a city">
+                <button type="submit">Go</button>
             </form>
+            <div class="box">
+                <div class="box-sm">
+                    <span class="temp">Temp</span>
+                    <div class="img-box">
+                        <img src="" alt="">
+                        <span class="description"></span>
+                    </div>
+                </div>
+                <div class="box-sm2">
+                <span class="cityName"></span>
+                <span>Feels like : <span class="feels"></span></span>
+                <span>Min temp : <span class="min"></span></span>
+                <span>Max temp : <span class="max"></span></span>
+                <span>Humidity : <span class="hum"></span></span>
+                <span>Air Pressure : <span class="press"></span></span>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
